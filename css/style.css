@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*===================================================
+                    GERAL
+=====================================================*/
+a {
+    text-decoration: none;
+    color: black;
+} 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+    margin: 0 15vw 0 15vw;
+}
+a.botao {
+    background-color: #0E8388;
+    color: white;
+    padding: 8px 14px 8px 14px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/*==================================================
+                    HEADER
+====================================================*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw 5vw 10vw;
+    align-items: center;
+    /*Alinha os itens verticalmente.*/
+}
+header h1 {
+    font-size:  1.5rem;
+    font-weight: bold;
+}
+header nav ul {
+   display: flex;
+}
+header nav ul li {
+    margin: 0 10px 0 10px;
+}
+
+/*==================================================
+                   MAIN
+====================================================*/
+
+
+/*=====section.banner=====*/
+main section.banner {
+    text-align: center;
+}
+main section.banner h2 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin: 1vw 0 1.5vw 0;
+}
+main section.banner p {
+    margin: 1vw 0 1.2vw 0;
+    color: #888888;
+    font-size: 1.3rem;
+}
+
+/*=====section.products=====*/
+   
+main section.products {
+    background-color: #CBE4DE;
+    margin: 5vw 0 0 0;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+}
+main section.products h2 {
+    font-size: 2.2rem;
+}
+main section.products p {
+    margin: 1vw 0 1.2vw 0;
+    color: #888888;
+    font-size: 1.3rem;
+}
+main section.products ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main section.products ul li {
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+    margin: 1vw 0 1.5vw 0;
+    padding: 10px 10px 10px 10px;
+}
