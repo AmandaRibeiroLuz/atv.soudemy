@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*===================================================
@@ -53,13 +140,14 @@ table {
 a {
     text-decoration: none;
     color: black;
-} 
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-main {
-    margin: 0 15vw 0 15vw;
-}
+
+main {}
+
 a.botao {
     background-color: #0E8388;
     color: white;
@@ -78,13 +166,16 @@ header {
     align-items: center;
     /*Alinha os itens verticalmente.*/
 }
-header h1 {
-    font-size:  1.5rem;
+
+header a h1 {
+    font-size: 1.5rem;
     font-weight: bold;
 }
+
 header nav ul {
-   display: flex;
+    display: flex;
 }
+
 header nav ul li {
     margin: 0 10px 0 10px;
 }
@@ -98,42 +189,124 @@ header nav ul li {
 main section.banner {
     text-align: center;
 }
+
 main section.banner h2 {
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin: 1vw 0 1.5vw 0;
 }
+
 main section.banner p {
     margin: 1vw 0 1.2vw 0;
     color: #888888;
     font-size: 1.3rem;
 }
 
-/*=====section.products=====*/
-   
+/*=======section.products=======*/
+
 main section.products {
-    background-color: #CBE4DE;
-    margin: 5vw 0 0 0;
-    padding: 1vw 1vw 1vw 1vw;
     text-align: center;
+    background-color: #CBE4DE;
+    width: 100%;
+    margin: 5vw 0 0 0;
+    padding: 1vw;
 }
+
 main section.products h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    margin: 2vw 0 1vw 0;
 }
-main section.products p {
-    margin: 1vw 0 1.2vw 0;
+
+main section p.subtitle {
+    margin: 2vw 26vw 2vw 26vw;
     color: #888888;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
+
 main section.products ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 1vw 15vw 1vw 15vw;
 }
+
 main section.products ul li {
     background-color: white;
     border-radius: 20px;
     width: 30%;
     margin: 1vw 0 1.5vw 0;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
+}
+main section.products ul li h3 {
+    font-size: 1.5rem;
+}
+main section.products ul li p {
+    margin: 1vw 5vw 1vw 5vw;
+    color: #888888;
+    font-size: 1.3rem;
+}
+main section.products ul li p span {
+    font-size: 3rem;
+    padding: 1vw;
+    background-color: #EFEFEF;
+    border-radius: 100px;
+}
+/*=======section.build=======*/
+main section.build {
+    text-align: center;
+    margin: 2vw 0 5vw 0;
+}
+
+main section.build h2 {
+    font-size: 2.5rem;
+    margin: 3vw 0 1vw 0;
+}
+main section.build ul {
+    justify-content: center;
+    display: flex;
+}
+main section.build ul li img {
+    margin: 1vw 2vw 1vw 12vw;
+    width: 80%;
+}
+main section.build ul li h3 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 7vw 2vw 1vw 12vw;
+}
+main section.build ul li p {
+    text-align: left;
+    color: #888888;
+    font-size: 1.4rem;
+    width: 35%;
+    margin: 1vw 2vw 2vw 12vw;
+}
+
+/*==================================================
+                   FOOTER
+====================================================*/
+footer {
+    background-color: #CBE4DE;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+footer p {
+    text-align: center;
+    color: #888888;
+    margin: 1.5vw 0 0 0;
+}
+footer h2.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1.7vw 0 0 2vw;
+}
+footer ul {
+    display: flex;
+    text-align: right;
+    margin: 1.3vw 2vw 0 0;
+}
+footer ul li {
+    color: #888888;
+    margin: 1vw;
 }
