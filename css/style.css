@@ -148,13 +148,7 @@ body {
 
 main {}
 
-a.botao {
-    background-color: #0E8388;
-    color: white;
-    padding: 8px 14px 8px 14px;
-    border-radius: 6px;
-    display: inline-block;
-}
+
 
 /*==================================================
                     HEADER
@@ -179,6 +173,12 @@ header nav ul {
 header nav ul li {
     margin: 0 10px 0 10px;
 }
+header nav ul li a.botao {
+    background-color: #0E8388;
+    color: white;
+    padding: 8px 14px 8px 14px;
+    border-radius: 6px;
+}
 
 /*==================================================
                    MAIN
@@ -200,6 +200,13 @@ main section.banner p {
     margin: 1vw 0 1.2vw 0;
     color: #888888;
     font-size: 1.3rem;
+}
+main section.banner a.botao {
+    background-color: #0E8388;
+    color: white;
+    padding: 8px 14px 8px 14px;
+    border-radius: 6px;
+    display: inline-block;
 }
 
 /*=======section.products=======*/
