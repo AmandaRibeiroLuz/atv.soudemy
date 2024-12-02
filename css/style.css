@@ -149,7 +149,6 @@ body {
 main {}
 
 
-
 /*==================================================
                     HEADER
 ====================================================*/
@@ -197,7 +196,7 @@ main section.banner h2 {
 }
 
 main section.banner p {
-    margin: 1vw 0 1.2vw 0;
+    margin: 2vw 0 3vw 0;
     color: #888888;
     font-size: 1.3rem;
 }
@@ -207,6 +206,10 @@ main section.banner a.botao {
     padding: 8px 14px 8px 14px;
     border-radius: 6px;
     display: inline-block;
+}
+section.banner img {
+    width: 80%;
+    max-width: 800px;
 }
 
 /*=======section.products=======*/
@@ -234,14 +237,13 @@ main section.products ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 1vw 15vw 1vw 15vw;
 }
 
 main section.products ul li {
     background-color: white;
     border-radius: 20px;
     width: 30%;
-    margin: 1vw 0 1.5vw 0;
+    margin: 1vw 0vw 1.5vw 0vw;
     padding: 10px;
 }
 main section.products ul li h3 {
@@ -317,3 +319,80 @@ footer ul li {
     color: #888888;
     margin: 1vw;
 }
+
+/*==================RESPONSIVIDADE=====================*/
+@media (max-width: 600px) {
+    header {
+        display: block;
+        text-align: center;
+    } 
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav ul li {
+        width: 40%;
+        margin: 4vw;
+    }
+    header a h1 {
+        margin: 3vw;
+    }
+    main section.banner h2 {
+        margin: 8vw;
+        font-size: 2rem;
+    }
+    main section.banner p {
+        margin:  6vw;
+    }
+    main section.products h2 {
+        margin: 8vw;
+        font-size: 2rem;
+    }
+    main section.products p {
+        margin: 6vw;
+        font-size: 1.3rem;
+    }
+    main section.products ul li {
+        width: 80%;
+        margin: 6vw;
+    }
+    main section.products ul {
+        flex-wrap: wrap;
+        display: block;
+    }
+    main section.build {
+        margin: 10vw 0;
+    }
+    main section.build h2 {
+        margin: 8vw;
+        font-size: 2rem;
+    }
+    main section.build p {
+        margin: 6vw;
+        font-size: 1.3rem;
+    }
+    main section.build ul {
+        flex-wrap: wrap;
+        display: block;
+    }
+    main section.build ul li {
+        width: 80%;
+        margin: 6vw;
+    }
+    main section.build ul li h3 {
+        text-align: center;
+    }
+    main section.build ul li p {
+        text-align: center;
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    footer {
+        padding: 6vw;
+        display: block;
+        text-align: center;
+    } 
+    footer ul {
+        margin: 0 11vw 0 11vw;
+    }
+  }
